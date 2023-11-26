@@ -26,7 +26,7 @@ const Section = ({ item }) => {
       <div className="text-2xl font-semibold">{item.header}</div>
       <ul className="list-outside list-disc ml-6">
         {options.map((option, index) => (
-          <li>{option}</li>
+          <li key={`__list_element_${index}`}>{option}</li>
         ))}
       </ul>
     </div>
